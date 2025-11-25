@@ -1,0 +1,26 @@
+{
+  "name": "gamech",
+  "version": "1.0.0",
+  "description": "A flexible booking system for sport clubs, supporting multiple clubs, venues, and time-slot configurations.",
+  "homepage": "https://github.com/Alejandrocsdev/Gamech-Server#readme",
+  "bugs": {
+    "url": "https://github.com/Alejandrocsdev/Gamech-Server/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alejandrocsdev/Gamech-Server.git"
+  },
+  "license": "MIT",
+  "author": "Alejandrocsdev",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0"
+  }
+}
