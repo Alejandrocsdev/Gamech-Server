@@ -1,0 +1,16 @@
+# ---------------------------------------------------------
+# Base Image: Node.js 24.11.1 on Alpine 3.21
+# ---------------------------------------------------------
+FROM node:24.11.1-alpine3.21
+
+WORKDIR /app
+
+COPY package*.json ./
+
+RUN npm ci --omit=dev
+
+COPY . .
+
+EXPOSE 3000
+
+CMD ["npm", "run", "start"]

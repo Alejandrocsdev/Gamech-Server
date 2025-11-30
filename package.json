@@ -16,7 +16,15 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "node --watch server.js"
+    "dev": "node --watch server.js",
+    "docker:up": "docker-compose -f ../docker-compose.yml up -d",
+    "docker:build": "docker-compose -f ../docker-compose.yml up -d --build",
+    "docker:stop": "docker-compose -f ../docker-compose.yml stop",
+    "docker:down": "docker-compose -f ../docker-compose.yml down",
+    "docker:dev:up": "docker-compose -f ../docker-compose.dev.yml up -d",
+    "docker:dev:build": "docker-compose -f ../docker-compose.dev.yml up -d --build",
+    "docker:dev:stop": "docker-compose -f ../docker-compose.dev.yml stop",
+    "docker:dev:down": "docker-compose -f ../docker-compose.dev.yml down"
   },
   "dependencies": {
     "cors": "^2.8.5",
